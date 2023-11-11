@@ -4,12 +4,16 @@ public class Cross {
     public void printCross(int sideLength) {
         for (int x = 1; x <= sideLength; x++){
             for (int y = 1; y <= sideLength; y++){
-                if (y == x || y == (sideLength + 1 - x))
-                    System.out.print(8);
+//                if (y == x || y == (sideLength + 1 - x))
+//                    System.out.print(8);
+//                else
+//                    System.out.print(" ");
+                if (x == sideLength / 2  || y == sideLength / 2)
+                    System.out.print("8");
                 else
                     System.out.print(" ");
             }
             System.out.println();
             }
-        }
+    }
 }
